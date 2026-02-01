@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Práctica Matemáticas ICFES - Guiada</title>
+  <link rel="stylesheet" href="styles.css" /> 
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="titleRow">
+        <div>
+          <h1>Práctica 10 — Preguntas Matemáticas ICFES (Guía Interactiva)</h1>
+          <p class="subtitle">
+            Elige una opción para cada pregunta. Verás si es correcta o incorrecta,
+            y puedes seguir la guía <b>paso a paso</b> (un paso por vez).
+          </p>
+        </div>
+        <div class="pillRow">
+          <div class="pill"><span class="dot"></span><span id="progress">0/10 resueltas</span></div>
+          <div class="pill">📱 100% responsive</div>
+          <div class="pill">⚡ Sin internet</div>
+        </div>
+      </div>
+    </header>
+
+    <main class="grid" id="app"></main>
+
+    <section class="footer" id="footer">
+      <div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center">
+        <div>
+          <div style="font-weight:800;color:var(--text)">Respuestas correctas (según adjunto)</div>
+          <div style="margin-top:4px">Úsalas para validar o para repasar al final.</div>
+        </div>
+        <div class="btnRow">
+          <button class="primary" id="btnResetAll">Reiniciar todo</button>
+          <button class="danger" id="btnShowAll">Revelar respuestas</button>
+        </div>
+      </div>
+
+      <div class="answers" id="answers"></div>
+
+      <div style="margin-top:12px">
+        <b style="color:var(--text)">Nota:</b> El contenido de enunciados/opciones se muestra tal cual el documento (incluye “...”).
+      </div>
+    </section>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
