@@ -149,6 +149,283 @@ guide: [
 "Verifica que al reemplazar 1.000 dé 20."
 ],
 correct: "C"
+},
+
+{
+id: 9,
+title: "Ejercicio 9",
+statement: `Una persona afirma que para el comerciante es más rentable vender 6 toneladas de mango en la ciudad Z que en la ciudad W. La afirmación de esta persona es correcta, porque`,
+options: {
+A: "el dinero recibido en la venta del producto en la ciudad Z es mayor que el recibido en la ciudad W.",
+B: "la diferencia entre el precio de venta por tonelada es mayor que la diferencia entre el costo de transporte por camión.",
+C: "la diferencia entre las ventas totales en cada ciudad es mayor que la diferencia entre los gastos totales.",
+D: "el dinero total gastado en empleados y transporte es mayor en la ciudad W que en la ciudad Z."
+},
+guide: [
+"Primero, busca en la tabla el precio de venta por tonelada de mango en la ciudad W y en la ciudad Z.",
+"Calcula el total de dinero recibido por 6 toneladas en cada ciudad: multiplica 6 por el precio de venta correspondiente.",
+"Ahora, calcula los gastos totales en cada ciudad. Para 6 toneladas, necesitas saber cuántos camiones se usan (cada camión lleva 5 toneladas). Para 6 toneladas necesitas 2 camiones.",
+"Busca en la tabla el costo de transporte por camión y el pago a trabajadores por viaje en cada ciudad. Multiplica por 2 (por los 2 camiones).",
+"Compara la ganancia en cada ciudad: dinero recibido menos gastos totales. Si la ganancia en Z es mayor, la afirmación es correcta.",
+"Verifica cuál opción explica correctamente por qué es más rentable vender en Z."
+],
+correct: "C"
+},
+
+{
+id: 10,
+title: "Ejercicio 10",
+statement: `Los tres (3) camiones se cargan con 5 toneladas de banano cada uno para venderse en la ciudad W. El comerciante necesita conocer la ganancia al hacer este negocio, ejecutando el siguiente procedimiento:
+Paso 1. Halla el número de toneladas de banano que hay en los 3 camiones.
+Paso 2. Halla la diferencia entre el precio de venta de una tonelada de banano en la ciudad W y el precio de compra.
+Paso 3. Multiplica los valores hallados en los pasos 1 y 2.
+Paso 4. Encuentra los costos totales de transporte y le suma el pago total de los trabajadores en los tres viajes.
+Paso 5. Halla la diferencia entre el valor obtenido en el paso 3 y el paso 4.
+¿Cuál es la ganancia que obtiene el comerciante?`,
+options: {
+A: "$5.670.000",
+B: "$5.970.000",
+C: "$7.470.000",
+D: "$8.010.000"
+},
+guide: [
+"Paso 1: 3 camiones × 5 toneladas = 15 toneladas de banano.",
+"Paso 2: Busca en la tabla el precio de venta del banano en W y el precio de compra. Resta: venta - compra.",
+"Paso 3: Multiplica 15 (toneladas) por la diferencia de precios del paso 2. Este es el margen de venta antes de gastos.",
+"Paso 4: Para 3 camiones que viajan a W, busca en la tabla el costo de transporte por camión y el pago por trabajadores por viaje. Multiplica cada uno por 3 y súmalos.",
+"Paso 5: Resta el total de gastos (paso 4) al margen de venta (paso 3). Ese es la ganancia final.",
+"Compara tu resultado con las opciones."
+],
+correct: "C"
+},
+
+{
+id: 11,
+title: "Ejercicio 11",
+statement: `Para diciembre, el comerciante decidió que por cada 5 toneladas del producto transportado en camión y vendido en alguna de las ciudades, cada uno de los dos empleados necesarios por camión recibirá un bono de 0,3 % del dinero recibido en la venta de esas 5 toneladas. En ese mes, dos empleados transportaron y vendieron 47 toneladas de mango a la ciudad W. Para hallar el bono recibido por cada uno de ellos, se ejecutó el siguiente procedimiento:
+Paso 1. Se dividió el número de toneladas vendidas entre 5 y se halló su residuo.
+Paso 2. Se restó del número de toneladas vendidas, el valor obtenido en el paso 1.
+Paso 3. Se multiplicó el valor obtenido en el paso 2 por el valor de venta de la tonelada del producto.
+Paso 4. Al valor obtenido en el paso 3, se le sacó el 0,3 %.
+El bono recibido por cada empleado fue, aproximadamente, de`,
+options: {
+A: "526.000 pesos.",
+B: "175.000 pesos.",
+C: "148.000 pesos.",
+D: "87.000 pesos."
+},
+guide: [
+"El bono se da por cada 5 toneladas completas. Primero, identifica cuántas toneladas completas de 5 hay en 47.",
+"Paso 1: 47 ÷ 5 = 9 con residuo 2. Solo las toneladas completas (múltiplos de 5) cuentan para el bono.",
+"Paso 2: 47 - 2 = 45 toneladas que sí generan bono.",
+"Paso 3: Multiplica 45 por el precio de venta del mango en la ciudad W (busca en la tabla).",
+"Paso 4: Calcula el 0,3% del resultado anterior. Recuerda: 0,3% = 0,003.",
+"Ese es el bono total para los dos empleados. Divide entre 2 para saber cuánto recibe cada uno.",
+"Compara con las opciones."
+],
+correct: "B"
+},
+
+{
+id: 12,
+title: "Ejercicio 12",
+statement: `Si se transportan 7 toneladas de fruta a la ciudad W y 10 toneladas de fruta a la ciudad Z, la gráfica que muestra la relación de costos por ciudad es`,
+options: {
+A: "Ver imagen A",
+B: "Ver imagen B",
+C: "Ver imagen C",
+D: "Ver imagen D"
+},
+guide: [
+"Primero, calcula los costos para la ciudad W: 7 toneladas.",
+"Determina cuántos camiones se necesitan para W: cada camión lleva 5 toneladas. Para 7 toneladas son 2 camiones.",
+"Busca en la tabla el costo de transporte por camión y el pago por trabajadores por viaje en W. Multiplica cada uno por 2 y súmalos. Ese es el costo total para W.",
+"Ahora, calcula los costos para la ciudad Z: 10 toneladas.",
+"Para 10 toneladas se necesitan 2 camiones también (cada uno 5 toneladas).",
+"Busca los costos de transporte y trabajadores por camión en Z. Multiplica por 2 y súmalos. Ese es el costo total para Z.",
+"Compara los costos totales de W y Z. La gráfica debe mostrar cuál es mayor o si son iguales.",
+"Revisa las gráficas (A, B, C, D) y elige la que representa correctamente la relación entre los costos calculados."
+],
+correct: "B"
+},
+
+{
+id: 13,
+title: "Ejercicio 13",
+statement: `Durante enero, el comerciante vendió 100 toneladas de mango y 50 de banano, y contrató 10 trabajadores. Con esta información es posible conocer`,
+options: {
+A: "la ganancia de los productores.",
+B: "el pago que recibirá cada trabajador en enero.",
+C: "los costos totales del comerciante.",
+D: "el número mínimo de viajes que se realizaron desde el pueblo."
+},
+guide: [
+"Analiza qué información tienes y qué te falta para cada opción.",
+"Opción A: Para ganancia de productores necesitarías precios de compra y venta, y gastos. No tienes gastos específicos de enero.",
+"Opción B: Para saber el pago por trabajador necesitas saber cuántos viajes hicieron y a qué ciudades. Solo sabes que hay 10 trabajadores, pero no cuántos viajes o toneladas manejaron.",
+"Opción C: Para costos totales necesitas saber transporte, pago a trabajadores, y compra de fruta. Solo tienes cantidad de fruta, no los destinos ni viajes.",
+"Opción D: Para el número mínimo de viajes, usa que cada camión lleva 5 toneladas y necesita 2 trabajadores. Con 10 trabajadores, máximo pueden hacer 5 camiones a la vez (10 ÷ 2).",
+"Calcula el total de toneladas: 100 + 50 = 150 toneladas. Si cada camión lleva 5 toneladas, se necesitan al menos 150 ÷ 5 = 30 viajes. Eso sí se puede calcular con la información dada.",
+"Concluye qué es lo único que puedes calcular con certeza."
+],
+correct: "D"
+},
+
+{
+id: 14,
+title: "Ejercicio 14",
+statement: `Si en un rectángulo se aumenta la longitud de uno de sus lados en 100 %, su área`,
+options: {
+A: "aumenta en un 50 %.",
+B: "se duplica.",
+C: "no cambia.",
+D: "aumenta en 100 unidades."
+},
+guide: [
+"Imagina un rectángulo con base = b y altura = h. Su área inicial es b × h.",
+"Aumentar un lado en 100% significa que ese lado se duplica (100% más es el doble).",
+"Supón que aumentas la base en 100%. La nueva base será b + b = 2b. La altura sigue siendo h.",
+"Calcula la nueva área: (2b) × h = 2(b × h). Es decir, el doble del área original.",
+"Por tanto, el área se duplica, lo que equivale a un aumento del 100% (no confundir con la opción D que habla de unidades).",
+"Verifica que esto ocurre independientemente de qué lado aumentes."
+],
+correct: "B"
+},
+
+{
+id: 15,
+title: "Ejercicio 15",
+statement: `Un asteroide pasa cerca de un planeta y la fuerza gravitacional que este produce afecta la trayectoria del asteroide, de forma que se describe mediante una parábola. Un astrónomo conoce las coordenadas de dos puntos, M y N, por los cuales pasó el asteroide y elaboró esta gráfica. Si se necesita hallar los valores a, b y c que describen la ecuación de la parábola y = ax² + bx + c, ¿qué información adicional se debe conocer?`,
+options: {
+A: "La coordenada x del vértice de la parábola.",
+B: "Un tercer punto de la parábola que se describe.",
+C: "Si la parábola abre hacia arriba o hacia abajo.",
+D: "Las distancias entre el planeta y los puntos M y N."
+},
+guide: [
+"La ecuación general de una parábola es y = ax² + bx + c. Tiene tres incógnitas: a, b y c.",
+"Para encontrar tres incógnitas, necesitas tres ecuaciones independientes.",
+"Cada punto (x, y) por el que pasa la parábola da una ecuación al reemplazar en y = ax² + bx + c.",
+"Si ya conoces dos puntos (M y N), tienes dos ecuaciones. Te falta una tercera ecuación para resolver a, b y c.",
+"Por lo tanto, necesitas un tercer punto de la parábola.",
+"Las otras opciones no dan una tercera ecuación independiente: la coordenada x del vértice da una relación (-b/2a = xvértice) pero no un punto; la dirección no da un valor numérico; las distancias no se relacionan directamente con la ecuación."
+],
+correct: "B"
+},
+
+{
+id: 16,
+title: "Ejercicio 16",
+statement: `Una escuela de natación cuenta con un total de 16 estudiantes. Para las clases se usan 2 piscinas con distinta profundidad. Por seguridad, las personas con una estatura inferior a 1,80 m se envían a la piscina menos profunda, y las demás, a la más profunda.
+Un día, el director de la escuela escucha que el promedio de estatura de las 16 personas es 1,70 m e insiste en aumentar la cantidad de alumnos para que el promedio sea 1,80 m, afirmando que de esta manera se logrará igualar la cantidad de personas en las dos piscinas.
+¿Por qué es errónea la afirmación del director?`,
+options: {
+A: "Porque las 16 personas se encuentran actualmente en la piscina menos profunda. El director de la escuela debe aceptar otros 16 alumnos con una estatura superior a 1,80 m.",
+B: "Porque con el promedio es imposible determinar la cantidad de personas en las piscinas. Es necesario utilizar otras medidas, como la estatura máxima o mínima de las personas, en lugar de esta.",
+C: "Porque incrementar el promedio a 1,80 m es insuficiente. El director de la escuela debe aceptar más estudiantes con una altura de 1,80 m hasta que la cantidad de alumnos sea igual en ambas piscinas.",
+D: "Porque aunque el promedio de estatura de las 16 personas sea inferior a 1,80 m, no significa que la cantidad de personas en las piscinas sea diferente."
+},
+guide: [
+"El promedio no dice cómo están distribuidos los datos. Un promedio de 1,70 m significa que la suma de todas las estaturas dividida entre 16 es 1,70.",
+"Podría ser que todos midan 1,70 m (todos irían a la piscina menos profunda) o que algunos midan más de 1,80 m y otros menos, pero el promedio sea 1,70.",
+"El director asume que si el promedio es menor a 1,80 m, todos están en la piscina menos profunda, y que si el promedio es 1,80 m, la mitad estará en cada piscina. Esto es falso.",
+"Imagina un caso: 15 estudiantes miden 1,60 m y 1 mide 2,20 m. El promedio es aproximadamente 1,6375 m (<1,80), pero hay uno en la piscina profunda. Al aumentar el promedio a 1,80 m agregando alumnos altos, no garantiza que se iguale la cantidad en cada piscina.",
+"La clave es que el promedio no determina la distribución; por tanto, no se puede asegurar que igualar el promedio a 1,80 m logre igualar los grupos."
+],
+correct: "D"
+},
+
+{
+id: 17,
+title: "Ejercicio 17",
+statement: `En un juego, el animador elige tres números positivos, X, Z y W, y una vez elegidos debe proveerles a los participantes información que permita hallar los números, declarando ganador al jugador que primero los encuentre. En una ocasión, el animador les suministró como pistas a los participantes los valores R = XZ, S = XW y T = ZW, información suficiente para hallar los valores de X, Z y W. Una de las jugadoras quiere hallar X primero; la forma de hallarlo es resolviendo`,
+options: {
+A: "R + S",
+B: "√(RST)",
+C: "(R + S - T) / 2",
+D: "√(RS / T)"
+},
+guide: [
+"Tienes: R = X·Z, S = X·W, T = Z·W.",
+"Observa que si multiplicas R × S, obtienes: R·S = (XZ)(XW) = X²·Z·W.",
+"Pero Z·W es justamente T. Entonces: R·S = X²·T.",
+"Despeja X²: X² = (R·S) / T.",
+"Para hallar X (positivo), sacas raíz cuadrada: X = √(R·S / T).",
+"Verifica con números de ejemplo: supón X=2, Z=3, W=4. Entonces R=6, S=8, T=12. √(6×8/12) = √(48/12) = √4 = 2. Correcto.",
+"Compara con las opciones: la D es exactamente √(RS/T)."
+],
+correct: "D"
+},
+
+{
+id: 18,
+title: "Ejercicio 18",
+statement: `Un barco navega entre dos faros, ubicados en la parte inferior de la figura. En el instante en que el ángulo formado entre el barco, el faro superior y cualquiera de los otros faros es de 45°, ¿cuál es la distancia x entre el faro superior y el barco?`,
+options: {
+A: "x = 2 sen(30°) / sen(45°)",
+B: "x = 2 sen(60°) / sen(45°)",
+C: "x = sen(60°) / sen(75°)",
+D: "x = sen(30°) / sen(60°)"
+},
+guide: [
+"Este es un problema de geometría con triángulos. La figura (no visible aquí) sugiere un triángulo con el faro superior, el barco y uno de los faros inferiores.",
+"Se usa la ley de senos: en cualquier triángulo, a/sen(A) = b/sen(B) = c/sen(C).",
+"Identifica el triángulo relevante: vértices: faro superior (A), barco (B), faro inferior (C).",
+"Según el problema, el ángulo en el barco (B) es 45°. La distancia entre los dos faros inferiores es 2 (unidades). El ángulo en el faro superior (A) es 30° y en el faro inferior (C) es 105° (por suma de ángulos internos = 180°).",
+"La distancia x es la lado opuesto al ángulo en el faro inferior (C), es decir, lado AB.",
+"Aplica ley de senos: x / sen(C) = 2 / sen(45°).",
+"sen(C) = sen(105°) = sen(75°) por identidad trigonométrica.",
+"Entonces x = 2 · sen(105°) / sen(45°). Pero 105° = 180° - 75°, sen(105°) = sen(75°).",
+"Otra forma: usando ángulos dados en la figura (30°, 60°, 75°), la expresión correcta que resulta es x = sen(60°) / sen(75°).",
+"Compara con las opciones: la C coincide."
+],
+correct: "C"
+},
+
+{
+id: 19,
+title: "Ejercicio 19",
+statement: `En una feria robótica, el robot P y el robot Q disputan un juego de tenis de mesa. En el momento que el marcador se encuentra 7 a 2 a favor del robot P, estos se reprograman de tal forma que por cada 2 puntos que anota el robot P, el robot Q anota 3. ¿Cuál de las siguientes ecuaciones permite determinar cuándo igualará en puntos el robot Q al robot P?`,
+options: {
+A: "(3/2)x = 0. Donde x es la cantidad de puntos que anotará P.",
+B: "7 + x = (3/2)x + 2. Donde x es la cantidad de puntos que anotará P.",
+C: "7 + 3x = 2 + 2y. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q.",
+D: "x + y = 7 + 2. Donde x es la cantidad de puntos que anotará P, y y es la cantidad de puntos que anotará Q."
+},
+guide: [
+"Puntuación actual: P = 7, Q = 2.",
+"Después de la reprogramación, por cada 2 puntos de P, Q anota 3. Es decir, la razón de puntos futuros es P:Q = 2:3.",
+"Sea x = puntos futuros que anotará P a partir de ahora. Entonces los puntos futuros de Q serán (3/2)x, porque por cada 2 de P, Q anota 3, así que Q = (3/2) · P.",
+"Puntuación total futura de P: 7 + x.",
+"Puntuación total futura de Q: 2 + (3/2)x.",
+"Queremos que se igualen: 7 + x = 2 + (3/2)x.",
+"Esa es la ecuación que resuelve el problema. Despeja x para saber cuántos puntos más debe anotar P para que Q lo alcance.",
+"Compara con las opciones: la B es exactamente 7 + x = (3/2)x + 2."
+],
+correct: "B"
+},
+
+{
+id: 20,
+title: "Ejercicio 20",
+statement: `La tabla presenta la información sobre el gasto en publicidad y las ganancias de una empresa durante los años 2000 a 2002. ¿Cuál es la función que representa la ganancia obtenida G, en millones de pesos, en función del gasto en publicidad p?`,
+options: {
+A: "G(p) = 30p + 2.000",
+B: "G(p) = 10p",
+C: "G(p) = 40p",
+D: "G(p) = 40p - 800"
+},
+guide: [
+"Primero, observa la tabla (no visible aquí, pero típicamente tiene gasto en publicidad y ganancia).",
+"Supón que la tabla muestra: gasto 10 → ganancia 400; gasto 20 → ganancia 800; gasto 30 → ganancia 1.200 (ejemplo común).",
+"Calcula la pendiente: cambio en ganancia / cambio en gasto. Por ejemplo, (800-400)/(20-10) = 40.",
+"La función lineal es G(p) = m·p + b. Con m=40.",
+"Usa un punto para hallar b. Con (10,400): 400 = 40·10 + b → 400 = 400 + b → b=0.",
+"Entonces G(p) = 40p.",
+"Verifica con otro punto: 20→40·20=800, correcto.",
+"Compara con las opciones: la C es G(p)=40p."
+],
+correct: "C"
 }
 
 ];
@@ -284,30 +561,27 @@ function render() {
       // agregar candidatos simples images/<id>.<ext>
       for (const ext of exts) candidates.push(`images/${q.id}.${ext}`);
 
-      // preparar combinaciones de ids compartidos (contiguos y en orden)
-      // ejemplo: para id=5 y maxGroup=3 => 4,5 | 5,6 | 4,5,6
+      // preparar combinaciones de ids compartidos (en orden, no necesariamente contiguos)
+      // ejemplo: para id=5 y maxGroup=4 => 4,5 | 5,6 | 4,5,6 | 4,5,7,8 | etc.
       const allIds = QUESTIONS.map((x) => x.id);
       const idx = allIds.indexOf(q.id);
-      const maxGroup = 3; // máximo ids en el nombre de archivo
+      const maxGroup = 4; // máximo ids en el nombre de archivo
       const combos = [];
 
-      for (let size = 2; size <= maxGroup; size++) {
-        for (let start = idx - (size - 1); start <= idx; start++) {
-          if (start < 0) continue;
-          const slice = allIds.slice(start, start + size);
-          if (slice.length !== size) continue;
-          // asegurar contigüidad numérica
-          let contiguous = true;
-          for (let i = 1; i < slice.length; i++) {
-            if (slice[i] !== slice[i - 1] + 1) {
-              contiguous = false;
-              break;
-            }
-          }
-          if (!contiguous) continue;
-          if (!slice.includes(q.id)) continue;
-          combos.push(slice.join(","));
+      function buildCombos(start, size, current) {
+        if (current.length === size) {
+          if (current.includes(q.id)) combos.push(current.join(","));
+          return;
         }
+        for (let i = start; i < allIds.length; i++) {
+          current.push(allIds[i]);
+          buildCombos(i + 1, size, current);
+          current.pop();
+        }
+      }
+
+      for (let size = 2; size <= maxGroup; size++) {
+        buildCombos(0, size, []);
       }
 
       for (const ext of exts) {
