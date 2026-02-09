@@ -1,24 +1,24 @@
 :root {
-  --bg: #0b1220;
-  --panel: #0f1a2f;
-  --panel2: #121f38;
-  --text: #e9eefc;
-  --muted: #a7b3d3;
-  --brand: #7c5cff;
-  --ok: #2ee59d;
-  --bad: #ff5a7a;
-  --warn: #ffcc66;
-  --border: rgba(255, 255, 255, 0.1);
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --bg: #1a2d52;
+  --panel: #2a4a7a;
+  --panel2: #335b8f;
+  --text: #f0f4ff;
+  --muted: #b8c5e0;
+  --brand: #8b7eff;
+  --ok: #4ff0b8;
+  --bad: #ff7a8e;
+  --warn: #ffd966;
+  --border: rgba(255, 255, 255, 0.15);
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
   --radius: 18px;
 }
 * {
   box-sizing: border-box;
 }
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 body {
   margin: 0;
   font-family:
@@ -44,19 +44,21 @@ body {
     ),
     linear-gradient(180deg, #070c16 0%, var(--bg) 60%, #070c16 100%);
   color: var(--text);
-  padding: 18px 14px 42px;
+  padding: 50px 14px 42px;
 }
 a {
   color: inherit;
 }
 .wrap {
-  max-width: 980px;
+  /* max-width: auto; */
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 14px;
+  position: relative;
+  /* padding-top: 160px; */
 }
-header {
+/* header {
   padding: 18px 16px;
   background: linear-gradient(
     180deg,
@@ -66,11 +68,14 @@ header {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  position: sticky;
-  top: 10px;
+  width: min(980px, calc(100% - 28px));
+  position: fixed;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
   backdrop-filter: blur(10px);
-  z-index: 10;
-}
+} */
 .titleRow {
   display: flex;
   gap: 12px;
@@ -165,6 +170,25 @@ h1 {
   font-size: 14px;
   line-height: 1.45;
   white-space: pre-wrap;
+}
+
+.qImage {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+
+.imgDebug {
+  color: var(--muted);
+  font-size: 12px;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.02);
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px dashed rgba(255,255,255,0.04);
 }
 .opts {
   display: grid;
